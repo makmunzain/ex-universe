@@ -57,7 +57,7 @@ export default function FisheyeScene() {
         onMove={handleJoystickMove}  // Menangkap input gerakan joystick
       />
       
-      <Canvas shadows onPointerDown={handlePointerLock}>
+      <Canvas shadows>
         <Environment files="/models/night.hdr" ground={{ scale: 100 }} />
         <directionalLight intensity={0.7} castShadow shadow-bias={-0.0004} position={[-20, 20, 20]}>
           <orthographicCamera attach="shadow-camera" args={[-20, 20, 20, -20]} />
